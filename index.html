@@ -10,16 +10,12 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
     <!-- Custon CSS and JS -->
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="script.js"></script>
+    
 </head>
 
-<body>
+<body onkeypress="getLetter(event)">
 
     <header class="page-header">
         <h1>Hangman</h1>
@@ -30,13 +26,16 @@
             <aside class="col-md-5">
                 <div class="panel panel-default">
                     <div class="panel-body">
-
                         <div>Wins:</div>
-                        <div id="score"></div>
+                        <div id="score">0</div>
                         <div>Number of guesses remaining:</div>
                         <div id="chances"></div>
                         <div>Letters already guessed:</div>
-                        <div id="chances"></div>
+                        <div id="guessed"></div>
+                        <br>
+                        
+                        <button type="button" class="btn btn-primary" onclick="startGame()">New Game</button>
+                        
                     </div>
                 </div>
             </aside>
@@ -50,8 +49,15 @@
 
         </div>
     </div>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <script src="script.js"></script>
+
+    
 </body>
 
 </html>
