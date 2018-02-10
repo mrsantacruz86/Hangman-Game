@@ -1,5 +1,7 @@
 /*Stylesheet*/
-#cWord{
-    font-size: 24px;
+
+#cWord {
+    font-size: 40px;
     font-weight: bolder;
+    letter-spacing: 10px;
 }
