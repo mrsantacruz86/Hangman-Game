@@ -12,11 +12,9 @@
 
     <!-- Custon CSS and JS -->
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-
 </head>
 
 <body>
-
     <header class="page-header">
         <h1>Hangman</h1>
     </header>
@@ -28,8 +26,6 @@
                     <div class="panel-body">
                         <div>Wins:</div>
                         <div id="score">0</div>
-                        <div>Number of guesses remaining:</div>
-                        <div id="chances"></div>
                         <div>Letters already guessed:</div>
                         <div id="guessed"></div>
                         <br>
@@ -41,8 +37,8 @@
             </aside>
 
             <section class="col-md-7">
-                <h2>Press any key to get started...</h2>
-                <h2>Current Word:</h2>
+                <h5 class="instructions">Press a letter to start guessing...</h5>
+                <br><br>
                 <div id="cWord"></div>
 
             </section>
