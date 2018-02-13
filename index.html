@@ -15,10 +15,11 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <h1>Hangman</h1>
-    </header>
-    <div class="container-fluid">
+    <div class="container">
+	    <header class="page-header">
+	        <h1><img src="images/star-hangman.png" class="reponsive-image" alt="Star Hangman"></h1>
+	    </header>
+    
         <div class="row">
 
             <aside class="col-md-5">
@@ -30,17 +31,22 @@
                         <div id="guessed"></div>
                         <br>
 
-                        <button type="button" class="btn btn-primary" onclick="startGame()">New Game</button>
+                        <button type="button" class="btn btn-warning" onclick="startGame()">New Game</button>
 
                     </div>
                 </div>
             </aside>
 
             <section class="col-md-7">
-                <h5 class="instructions">Press a letter to start guessing...</h5>
-                <br><br>
-                <div id="cWord"></div>
+            	<div class="panel panel-default">
+            		<div class="panel-body">
+            			<h5 class="instructions">Press a letter to start guessing...</h5>
+		                <br><br>
+		                <div id="cWord"></div>
 
+            		</div>
+	                
+				</div>
             </section>
 
         </div>

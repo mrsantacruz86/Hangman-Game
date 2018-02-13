@@ -1,6 +1,6 @@
 // JavaScript Code for Hangman
 // Global array containing the possible words to play
-var wordList = ['metamorphosis', 'biology', 'compound', 'salt'];
+var wordList = ['skywalker', 'vader', 'jedi', 'force', 'empire', 'wookie'];
 var score = 0;
 
 function randomWord(wList) {
