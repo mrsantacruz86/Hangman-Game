@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +27,10 @@
                     <div class="panel-body">
                         <div>Wins:</div>
                         <div id="score">0</div>
-                        <div>Letters already guessed:</div>
-                        <div id="guessed"></div>
+                        <br>
+                        <div>Remaining Chances: <span id="chances">5</span></div>                        
+                        <div>Letters already guessed: <span id="guessed"></span></div>
+                        
                         <br>
 
                         <button type="button" class="btn btn-warning" onclick="startGame()">New Game</button>

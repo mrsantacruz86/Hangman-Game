@@ -29,6 +29,7 @@ function startGame() {
             else{
                 guessedLetters += event.key;
                 chances --;
+                document.getElementById("chances").innerHTML = chances;           
                 document.getElementById("guessed").innerHTML = guessedLetters;
             }
             if(chances <= 0){
